@@ -3,6 +3,7 @@ import Homepage from '../templates/home'
 const Contentstack = require('contentstack')
 var env_config = process.env.ENV || 'development';
 const config = require('../config/'+env_config);
+console.log(process.env.test, process.env.test2, process.env.test3);
 let Stack = Contentstack.Stack({
   api_key: config.contentstack.api_key,
   access_token: config.contentstack.access_token,
